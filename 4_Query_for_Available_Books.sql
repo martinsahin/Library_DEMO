@@ -1,0 +1,22 @@
+/*
+
+---4)___QUERY:
+---------------------------------------------------------------
+
+
+THIS QUERY WILL GIVE A RESULT SET FOR ALL THE BOOKS THAT ARE AVAILABLE FOR CHECK OUT.
+
+SINCE ALL BOOKS HAVE UNIQUE IDs (EVEN IF THEY ARE COMPLETELY IDENTICAL) THIS QUERY WILL 
+SORT BOOK TITLES AND COUNT THEM BY CHECKING THE RETURNED DATE COLUMN IN USER BOOK LOAN TABLE.
+
+
+*/
+
+SELECT  RBT.BookTitle, COUNT(RBT.BookTitle) AS Total_Available
+	FROM RefBookTitle  RBT
+		INNER JOIN Book  BK 
+		ON RBT.BookTitleID = BK.BookTitleID  
+		WHERE BK.BookID NOT IN (SELECT BookID FROM UserBookLoan WHERE ReturnedDate IS NULL) 
+		GROUP BY RBT.BookTitle
+		order by Total_Available desc
+GO
