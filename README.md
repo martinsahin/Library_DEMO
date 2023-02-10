@@ -3,7 +3,6 @@ This is a repo demonstrating scripts for a SQL skill set and coding style assess
 
 /*
 
--------------------------------------READ ME-------------------------------------
 
 Please open "SQL Coding Test - Lirbary System" pdf file for the assessment.
 
