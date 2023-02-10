@@ -1,5 +1,5 @@
 # Library Demo
-This is a coding test to assess SQL skill sets and coding style.
+This is a repo demonstrating scripts for a SQL skill set and coding style assessment.
 
 /*
 
