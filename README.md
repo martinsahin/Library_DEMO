@@ -4,7 +4,7 @@ This is a repo demonstrating scripts for a SQL skill set and coding style assess
 /*
 
 
-Please open "SQL Coding Test - Lirbary System" pdf file for the assessment.
+Assessment information and details can be found on the "SQL Coding Test - Library System.pdf" file 
 
 In this solution, only the instructions in the task was followed and necassary
 objects and/or attributes were added.
